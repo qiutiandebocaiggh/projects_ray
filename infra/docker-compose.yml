@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: da_postgres
+    environment:
+      POSTGRES_USER: ray
+      POSTGRES_PASSWORD: raypass
+    ports:
+      - "5432:5432"
+    volumes:
+      - da_pgdata:/var/lib/postgresql/data
+
+volumes:
+  da_pgdata:

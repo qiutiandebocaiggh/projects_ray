@@ -1,0 +1,9 @@
+# mac
+.DS_Store
+
+# data files (keep repo light)
+**/data/**
+**/*.sqlite
+**/*.db
+**/*.csv
+**/*.parquet
